@@ -137,7 +137,7 @@ $leftTopButtons = Yii::$app->controller->module->leftTopButtons;
 <body class="no-skin">
 <?php $this->beginBody() ?>
 <!-- #section:basics/navbar.layout -->
-<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" style="width:100%">
     <script type="text/javascript">
         try {
             ace.settings.check('navbar', 'fixed')
@@ -145,7 +145,7 @@ $leftTopButtons = Yii::$app->controller->module->leftTopButtons;
         }
     </script>
 
-    <div class="navbar-container" id="navbar-container">
+    <div class="navbar-container" id="navbar-container" style="width:100%">
         <!-- #section:basics/sidebar.mobile.toggle -->
         <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler">
             <span class="sr-only">Toggle sidebar</span>
@@ -226,7 +226,7 @@ $leftTopButtons = Yii::$app->controller->module->leftTopButtons;
 </div>
 
 <!-- /section:basics/navbar.layout -->
-<div class="main-container main-container-fixed" id="main-container">
+<div class="main-container main-container-fixed" id="main-container" style="padding-top: 55px;">
     <script type="text/javascript">
         try {
             ace.settings.check('main-container', 'fixed')
@@ -270,6 +270,7 @@ $leftTopButtons = Yii::$app->controller->module->leftTopButtons;
                 'options'   => [
                     'id'    => 'nav-list-main',
                     'class' => 'nav nav-list',
+                    'style' => 'flex-direction: column'
                 ],
                 'labelName' => 'menu_name',
                 'items'     => $menus,
