@@ -2,7 +2,7 @@
 
 namespace jinxing\admin\widgets;
 
-use yii\bootstrap\Widget;
+use yii\bootstrap5\Widget;
 
 /**
  * Alert widget renders a message from session flash. All flash messages are displayed
@@ -62,7 +62,7 @@ class Alert extends Widget
                     /* assign unique id to each alert box */
                     $this->options['id'] = $this->getId() . '-' . $type . '-' . $i;
 
-                    echo \yii\bootstrap\Alert::widget([
+                    echo \yii\bootstrap5\Alert::widget([
                         'body' => $message,
                         'closeButton' => $this->closeButton,
                         'options' => $this->options,
