@@ -124,9 +124,11 @@ class Nav extends Widget
         // url 跳转地址, 使用的是绝对路径跳转
         $url = ArrayHelper::getValue($item, 'url');
         if ($url) {
-            // 存在url,那么使用绝对路径，存在BaseUrl 那么使用BaseUrl
-            $prefix = Yii::$app->getRequest()->getBaseUrl();
-            $url    = $prefix . '/' . ltrim($url, '/');
+            if (strpos($url, 'http') === false) {
+                // 存在url,那么使用绝对路径，存在BaseUrl 那么使用BaseUrl
+                $prefix = Yii::$app->getRequest()->getBaseUrl();
+                $url = $prefix . '/' . ltrim($url, '/');
+            }
         } else {
             $url = '#';
         }
