@@ -43,7 +43,7 @@ $leftTopButtons = Yii::$app->controller->module->leftTopButtons;
         }
     </script>
     <script type="text/javascript">
-        document.domain = 'ssqz.cn';
+        document.domain = '<?= ArrayHelper::getValue(Yii::$app->params, 'rootDomainName', 'ssqz.cn') ?>';
     </script>
     <!-- inline styles related to this page -->
     <!-- ace settings handler -->

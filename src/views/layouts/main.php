@@ -114,7 +114,7 @@ $url = Helper::getAssetUrl();
     </a>
 </div>
 <script type="text/javascript">
-    document.domain = 'ssqz.cn';
+    document.domain = '<?= ArrayHelper::getValue(Yii::$app->params, 'rootDomainName', 'ssqz.cn') ?>';
 </script>
 <!-- 公共的JS文件 -->
 <!-- basic scripts -->
