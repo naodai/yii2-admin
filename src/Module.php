@@ -186,7 +186,7 @@ class Module extends yii\base\Module
                 return false;
             }
 
-            throw new UnauthorizedHttpException('对不起，您现在还没获得该操作的权限!');
+            throw new UnauthorizedHttpException('对不起，您现在还没获得该操作['.Yii::$app->request->hostInfo.'/'.$action->getUniqueId().']的权限!');
         }
 
         return true;
