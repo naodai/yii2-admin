@@ -42,6 +42,9 @@ $leftTopButtons = Yii::$app->controller->module->leftTopButtons;
             }
         }
     </script>
+    <script type="text/javascript">
+        document.domain = 'ssqz.cn';
+    </script>
     <!-- inline styles related to this page -->
     <!-- ace settings handler -->
     <script src="<?= $url ?>/js/ace-extra.min.js"></script>

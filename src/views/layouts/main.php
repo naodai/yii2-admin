@@ -113,6 +113,9 @@ $url = Helper::getAssetUrl();
         <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
     </a>
 </div>
+<script type="text/javascript">
+    document.domain = 'ssqz.cn';
+</script>
 <!-- 公共的JS文件 -->
 <!-- basic scripts -->
 <!--[if !IE]> -->
