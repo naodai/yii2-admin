@@ -18,7 +18,7 @@ use jinxing\admin\behaviors\Logging;
  *
  * @package jinxing\admin\controllers
  */
-class Controller extends \yii\web\Controller
+class Controller extends BaseController
 {
     // 引入json 返回处理类
     use JsonTrait;
@@ -58,15 +58,15 @@ class Controller extends \yii\web\Controller
      *
      * @return array
      */
-    public function behaviors()
-    {
-        return [
-            'logging' => [
-                'class' => Logging::className(),
-                'user'  => ArrayHelper::getValue($this->module, 'user'),
-            ],
-        ];
-    }
+//    public function behaviors()
+//    {
+//        return [
+//            'logging' => [
+//                'class' => Logging::className(),
+//                'user'  => ArrayHelper::getValue($this->module, 'user'),
+//            ],
+//        ];
+//    }
 
     /**
      * 获取pk
