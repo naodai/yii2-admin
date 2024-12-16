@@ -76,6 +76,9 @@ $url = Helper::getAssetUrl();
     <script src="<?= $url ?>/js/html5shiv.min.js"></script>
     <script src="<?= $url ?>/js/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+        document.domain = '<?= ArrayHelper::getValue(Yii::$app->params, 'rootDomainName', 'localhost') ?>';
+    </script>
 </head>
 <body class="no-skin">
 <?php $this->beginBody() ?>
@@ -113,9 +116,6 @@ $url = Helper::getAssetUrl();
         <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
     </a>
 </div>
-<script type="text/javascript">
-    document.domain = '<?= ArrayHelper::getValue(Yii::$app->params, 'rootDomainName', 'ssqz.cn') ?>';
-</script>
 <!-- 公共的JS文件 -->
 <!-- basic scripts -->
 <!--[if !IE]> -->
