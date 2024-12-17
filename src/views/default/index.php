@@ -140,7 +140,7 @@ $leftTopButtons = Yii::$app->controller->module->leftTopButtons;
 <body class="no-skin">
 <?php $this->beginBody() ?>
 <!-- #section:basics/navbar.layout -->
-<div id="navbar" class="navbar navbar-default navbar-fixed-top" style="width:100%">
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" style="width:100%;background:#ff892b;">
     <script type="text/javascript">
         try {
             ace.settings.check('navbar', 'fixed')
@@ -163,7 +163,7 @@ $leftTopButtons = Yii::$app->controller->module->leftTopButtons;
             </a>
         </div>
 
-        <div class="navbar-buttons navbar-header pull-right" role="navigation">
+        <div class="navbar-buttons navbar-header pull-right" role="navigation" style="background:#ff892b;">
             <ul class="nav ace-nav">
                 <?php if ($before_user = Yii::$app->session->get('before_user')) : ?>
                     <li class="light-blue">
@@ -182,7 +182,7 @@ $leftTopButtons = Yii::$app->controller->module->leftTopButtons;
                 <?php endif; ?>
                 <!-- 用户信息显示 -->
                 <li class="light-blue">
-                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle" style="background:#ff892b;">
                         <img class="nav-user-photo"
                             <?php $user_avatar = ArrayHelper::getValue($user, 'face'); ?>
                              src="<?= $user_avatar ? $user_avatar : $url . '/avatars/avatar.jpg'; ?>"
